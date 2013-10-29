@@ -13,6 +13,14 @@
 // --------------------------------------------------
 
 // Common styles
+//   Prepend custom ILR styles
+.btn-love,
+.btn-eat,
+.btn-drink,
+.btn-play,
+.btn-live,
+.btn-move,
+.btn-save,
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -58,7 +66,14 @@
 .btn-warning { .btn-styles(@btn-warning-bg); }
 .btn-danger  { .btn-styles(@btn-danger-bg); }
 .btn-info    { .btn-styles(@btn-info-bg); }
-
+//   Custom for ILR
+.btn-love    { .btn-styles(@btn-love-bg); }
+.btn-eat     { .btn-styles(@btn-eat-bg); }
+.btn-drink   { .btn-styles(@btn-drink-bg); }
+.btn-play    { .btn-styles(@btn-play-bg); }
+.btn-live    { .btn-styles(@btn-live-bg); }
+.btn-move    { .btn-styles(@btn-move-bg); }
+.btn-save    { .btn-styles(@btn-save-bg); }
 
 
 //
@@ -211,13 +226,21 @@
 }
 
 // Apply the mixin to the panel headings only
+//   Default Bootstrap
 .panel-default > .panel-heading   { .panel-heading-styles(@panel-default-heading-bg); }
 .panel-primary > .panel-heading   { .panel-heading-styles(@panel-primary-heading-bg); }
 .panel-success > .panel-heading   { .panel-heading-styles(@panel-success-heading-bg); }
 .panel-info > .panel-heading      { .panel-heading-styles(@panel-info-heading-bg); }
 .panel-warning > .panel-heading   { .panel-heading-styles(@panel-warning-heading-bg); }
 .panel-danger > .panel-heading    { .panel-heading-styles(@panel-danger-heading-bg); }
-
+//   Custom for ILR
+.panel-love > .panel-heading      { .panel-heading-styles(@panel-love-heading-bg); }
+.panel-eat > .panel-heading       { .panel-heading-styles(@panel-eat-heading-bg); }
+.panel-drink > .panel-heading     { .panel-heading-styles(@panel-drink-heading-bg); }
+.panel-play > .panel-heading      { .panel-heading-styles(@panel-play-heading-bg); }
+.panel-live > .panel-heading      { .panel-heading-styles(@panel-live-heading-bg); }
+.panel-move > .panel-heading      { .panel-heading-styles(@panel-move-heading-bg); }
+.panel-save > .panel-heading      { .panel-heading-styles(@panel-save-heading-bg); }
 
 
 //

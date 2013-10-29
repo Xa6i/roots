@@ -6,23 +6,69 @@
 // Global values
 // --------------------------------------------------
 
-// Grays
+// Colors
 // -------------------------
 
+// Grays
+// -------------------------
 @gray-darker:            lighten(#000, 13.5%); // #222
 @gray-dark:              lighten(#000, 20%);   // #333
 @gray:                   lighten(#000, 33.5%); // #555
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
+// Bright Colors (standard)
+// -------------------------
+@magenta-bright:				#ec1b84;           					
+@red-bright:      	    #eb2f27;
+@orange-bright:					#fcb918;
+@green-bright:					#0fa24b;
+@blue-bright:						#0092bf;
+@violet-bright:					#5b3995;
+@coal-bright:						@gray-dark; // #111; // #444;
+
+// Light Colors
+// -------------------------
+@magenta-light:					#eba1c6;
+@red-light:        			#eb8d88;
+@orange-light:					#fbe2a6;
+@green-light:						#87cba2;
+@blue-light:						#8fcbdd;
+@violet-light:					#ccbcdc;
+@coal-light:						@gray-light;
+
+// Dark Colors
+// -------------------------
+@magenta-dark:					#be1e6d;           					
+@red-dark:        	  	#bd2826;
+@orange-dark:						#cc972b;
+@green-dark:						#0c763c;
+@blue-dark:							#007191;
+@violet-dark:						#3f2767;
+@coal-dark:							#000;     // @gray-darker; // #111;
+
 // Brand colors
 // -------------------------
 
+// Default Bootstrap v3 colors
+// -------------------------
 @brand-primary:         #428bca;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
+
+// Custom colors for ILR
+// -------------------------
+// Brand (bright)
+@brand-love:						@red-bright;
+@brand-eat: 					  @violet-bright;
+@brand-drink:					  @coal-bright;
+@brand-play:						@blue-bright;
+@brand-live:						@magenta-bright;
+@brand-move:						@orange-bright;
+@brand-save:						@green-bright;
+
 
 // Scaffolding
 // -------------------------
@@ -104,6 +150,9 @@
 // Buttons
 // -------------------------
 
+// Default Buttons for Bootstrap v3
+// -------------------------
+
 @btn-font-weight:                normal;
 
 @btn-default-color:              #333;
@@ -131,6 +180,37 @@
 @btn-info-border:                darken(@btn-info-bg, 5%);
 
 @btn-link-disabled-color:        @gray-light;
+
+// Custom Buttons for ILR
+// -------------------------
+
+@btn-love-color:								 #fff;
+@btn-love-bg:                		 @brand-love;
+@btn-love-border:      		       darken(@btn-love-bg, 5%);
+
+@btn-eat-color:								 	 #fff;
+@btn-eat-bg:               		 	 @brand-eat;
+@btn-eat-border:       	 	       darken(@btn-eat-bg, 5%);
+
+@btn-drink-color:								 #fff;
+@btn-drink-bg:               		 @brand-drink;
+@btn-drink-border:       	 	     darken(@btn-drink-bg, 5%);
+
+@btn-play-color:								 #fff;
+@btn-play-bg:                		 @brand-play;
+@btn-play-border:      		       darken(@btn-play-bg, 5%);
+
+@btn-live-color:								 #fff;
+@btn-live-bg:                		 @brand-live;
+@btn-live-border:      		       darken(@btn-live-bg, 5%);
+
+@btn-move-color:								 #fff;
+@btn-move-bg:               		 @brand-move;
+@btn-move-border:      		       darken(@btn-move-bg, 5%);
+
+@btn-save-color:								 #fff;
+@btn-save-bg:                		 @brand-save;
+@btn-save-border:      		       darken(@btn-save-bg, 5%);
 
 
 // Forms
@@ -361,6 +441,7 @@
 
 // Form states and alerts
 // -------------------------
+// Default Bootstrap v3 colors
 
 @state-warning-text:             #c09853;
 @state-warning-bg:               #fcf8e3;
@@ -377,6 +458,36 @@
 @state-info-text:                #3a87ad;
 @state-info-bg:                  #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+// Custom colors for ILR
+
+@love-text:						@red-dark;
+@love-bg:							@red-light;
+@love-border:					darken(spin(@love-bg, -10), 7%);
+
+@eat-text:						@violet-dark;
+@eat-bg:							@violet-light;
+@eat-border:					darken(spin(@eat-bg, -10), 7%);
+
+@drink-text:					@coal-dark;
+@drink-bg:						@coal-light;
+@drink-border:				darken(spin(@drink-bg, -10), 7%);
+
+@play-text:						@blue-dark;
+@play-bg:							@blue-light;
+@play-border:					darken(spin(@play-bg, -10), 7%);
+
+@live-text:						@magenta-dark;
+@live-bg:							@magenta-light;
+@live-border:					darken(spin(@live-bg, -10), 7%);
+
+@move-text:						@orange-dark;
+@move-bg:							@orange-light;
+@move-border:					darken(spin(@move-bg, -10), 7%);
+
+@save-text:						@green-dark;
+@save-bg:							@green-light;
+@save-border:					darken(spin(@save-bg, -10), 7%);
 
 
 // Tooltips
@@ -418,6 +529,14 @@
 
 @label-color:                 #fff;
 @label-link-hover-color:      #fff;
+
+@label-love-bg:            		@brand-love;
+@label-eat-bg:       			 		@brand-eat;
+@label-drink-bg:           		@brand-drink;
+@label-play-bg:            		@brand-play;
+@label-live-bg:            		@brand-live;
+@label-move-bg:            		@brand-move;
+@label-save-bg:            		@brand-save;
 
 
 // Modals
@@ -516,6 +635,36 @@
 @panel-info-text:             @state-info-text;
 @panel-info-border:           @state-info-border;
 @panel-info-heading-bg:       @state-info-bg;
+
+// -------------------------
+@panel-love-text:       		  @love-text;
+@panel-love-border:        		@love-border;
+@panel-love-heading-bg:    		@love-bg;
+
+@panel-eat-text:       	 	  	@eat-text;
+@panel-eat-border:     	 	 		@eat-border;
+@panel-eat-heading-bg:  	 		@eat-bg;
+
+@panel-drink-text:       	 	  @drink-text;
+@panel-drink-border:     	 	 	@drink-border;
+@panel-drink-heading-bg:  	 	@drink-bg;
+
+@panel-play-text:     	   	  @play-text;
+@panel-play-border:     	   	@play-border;
+@panel-play-heading-bg:   	 	@play-bg;
+
+@panel-live-text:    	      	@live-text;
+@panel-live-border:    	    	@live-border;
+@panel-live-heading-bg:  	  	@live-bg;
+
+@panel-move-text:      		   	@move-text;
+@panel-move-border:       		@move-border;
+@panel-move-heading-bg:   		@move-bg;
+
+@panel-save-text:          		@save-text;
+@panel-save-border:        		@save-border;
+@panel-save-heading-bg:    		@save-bg;
+
 
 
 // Thumbnails
