@@ -31,11 +31,16 @@
 // -------------------------
 @magenta-light:					#eba1c6;
 @red-light:        			#eb8d88;
+@red-light:        			#eb8d88;
 @orange-light:					#fbe2a6;
 @green-light:						#87cba2;
 @blue-light:						#8fcbdd;
 @violet-light:					#ccbcdc;
 @coal-light:						@gray-light;
+
+// Lighter Colors
+// -------------------------
+@red-lighter:        		lighten(@red-bright, 45%); // was #eb8d88;
 
 // Dark Colors
 // -------------------------
@@ -62,6 +67,7 @@
 // -------------------------
 // Brand (bright)
 @brand-love:						@red-bright;
+@brand-love-alt:				@red-lighter;
 @brand-eat: 					  @violet-bright;
 @brand-drink:					  @coal-bright;
 @brand-play:						@blue-bright;
@@ -187,6 +193,10 @@
 @btn-love-color:								 #fff;
 @btn-love-bg:                		 @brand-love;
 @btn-love-border:      		       darken(@btn-love-bg, 5%);
+
+@btn-love-alt-color:              @love-text;
+@btn-love-alt-bg:                 @brand-love-alt;
+@btn-love-alt-border:             darken(@btn-love-bg, 5%);
 
 @btn-eat-color:								 	 #fff;
 @btn-eat-bg:               		 	 @brand-eat;
