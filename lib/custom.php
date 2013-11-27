@@ -13,4 +13,8 @@
     }
     return $templates; // Return our modified array with base-$cpt.php at the front of the queue
   }
+
+/*  The functions below are junk; i.e. just for learning.  */
+
+
 ?>

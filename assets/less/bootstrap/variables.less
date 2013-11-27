@@ -26,6 +26,7 @@
 @blue-bright:						#0092bf;
 @violet-bright:					#5b3995;
 @coal-bright:						@gray-dark; // #111; // #444;
+@cafe-bright:						#603913;
 
 // Light Colors
 // -------------------------
@@ -37,6 +38,7 @@
 @blue-light:						#8fcbdd;
 @violet-light:					#ccbcdc;
 @coal-light:						@gray-light;
+@cafe-light:						#c49a6c;
 
 // Lighter Colors
 // -------------------------
@@ -49,8 +51,10 @@
 @orange-dark:						#cc972b;
 @green-dark:						#0c763c;
 @blue-dark:							#007191;
-@violet-dark:						#3f2767;
+//@violet-dark:						#3f2767;
+@violet-dark:						#462d7d;
 @coal-dark:							#000;     // @gray-darker; // #111;
+@cafe-dark:							#3c2415;
 
 // Brand colors
 // -------------------------
@@ -74,7 +78,7 @@
 @brand-live:						@magenta-bright;
 @brand-move:						@orange-bright;
 @brand-save:						@green-bright;
-
+@brand-cafe:						@cafe-bright;
 
 // Scaffolding
 // -------------------------
@@ -222,6 +226,10 @@
 @btn-save-bg:                		 @brand-save;
 @btn-save-border:      		       darken(@btn-save-bg, 5%);
 
+@btn-cafe-color:								 #fff;
+@btn-cafe-bg:                		 @brand-cafe;
+@btn-cafe-border:      		       darken(@btn-cafe-bg, 5%);
+
 
 // Forms
 // -------------------------
@@ -328,8 +336,10 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+//@navbar-default-color:             #777;
+@navbar-default-color:             #fff;
+//@navbar-default-bg:                #f8f8f8;
+@navbar-default-bg:                @gray-lighter;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor(@grid-gutter-width / 2);
@@ -499,6 +509,10 @@
 @save-bg:							@green-light;
 @save-border:					darken(spin(@save-bg, -10), 7%);
 
+@cafe-text:						@cafe-dark;
+@cafe-bg:							@cafe-light;
+@cafe-border:					darken(spin(@cafe-bg, -10), 7%);
+
 
 // Tooltips
 // -------------------------
@@ -547,6 +561,7 @@
 @label-live-bg:            		@brand-live;
 @label-move-bg:            		@brand-move;
 @label-save-bg:            		@brand-save;
+@label-cafe-bg:            		@brand-cafe;
 
 
 // Modals
@@ -674,6 +689,10 @@
 @panel-save-text:          		@save-text;
 @panel-save-border:        		@save-border;
 @panel-save-heading-bg:    		@save-bg;
+
+@panel-cafe-text:          		@cafe-text;
+@panel-cafe-border:        		@cafe-border;
+@panel-cafe-heading-bg:    		@cafe-bg;
 
 
 
